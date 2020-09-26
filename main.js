@@ -1,13 +1,13 @@
 function load(){
+	let tronweb;
+	while(!window.tronWeb.ready){}
 	if(window.tronWeb){
+		console.log("GOt tron web");
 		tronWeb=window.tronWeb;
-		//sessionStorage.setItem('tronobj',JSON.stringify(tronWeb));
 	}
 	else{
-console.log("LocalStorage");
-		//tronWeb=JSON.parse(sessionStorage.tronobj);
+		console.log("LocalStorage");
 	}
-	console.log(tronWeb);
 }
 
 load();
