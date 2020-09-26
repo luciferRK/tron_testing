@@ -3,6 +3,26 @@
     <head>
     </head>
     <body>
-        <script src="./main.js"></script>
+        <script>
+function sleep(miliseconds) {
+                var currentTime = new Date().getTime();
+                while (currentTime + miliseconds >= new Date().getTime()) {
+                }
+            }
+
+function load(){
+	let tronweb;
+	sleep(1000);
+	if(window.tronWeb){
+		console.log("GOt tron web");
+		tronweb=window.tronWeb;
+	}
+	else{
+		console.log("LocalStorage");
+	}
+	console.log(tronweb);
+}
+window.onload=load();
+</script>
     </body>
 </html>
