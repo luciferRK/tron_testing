@@ -17,4 +17,4 @@ function load(){
 	console.log(tronweb);
 }
 
-load();
+window.onload=load;
