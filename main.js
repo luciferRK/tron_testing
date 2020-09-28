@@ -10,6 +10,7 @@ function load(){
 	if(window.tronWeb){
 		console.log("GOt tron web");
 		tronweb=window.tronWeb;
+		document.getElementById('wallet').innerText=tronweb.defaultAddress.base58;
 	}
 	else{
 		console.log("LocalStorage");
